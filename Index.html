@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Varrios Los Aztecaz | RP Application</title>
+  <style>
+    :root{
+      --khaki:#c3b091;
+      --khaki-dark:#a89873;
+      --ink:#1f1f1f;
+      --paper:#f7f6f2;
+      --accent:#6b5f3f;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color:var(--ink);
+      background:linear-gradient(180deg, var(--paper), #efece3);
+    }
+    header{
+      background:linear-gradient(135deg, var(--khaki), var(--khaki-dark));
+      color:#111;
+      padding:32px 16px;
+      border-bottom:4px solid var(--accent);
+    }
+    .wrap{max-width:1100px;margin:0 auto;padding:0 16px}
+    .brand{
+      display:flex;align-items:center;gap:14px;flex-wrap:wrap
+    }
+    .logo{
+      width:56px;height:56px;border-radius:50%;
+      background:#111;color:var(--khaki);
+      display:grid;place-items:center;font-weight:900;letter-spacing:1px
+    }
+    h1{margin:0;font-size:clamp(24px,4vw,36px);letter-spacing:1px}
+    .tag{opacity:.85;font-style:italic}
+    nav{margin-top:16px;display:flex;gap:12px;flex-wrap:wrap}
+    nav a{
+      text-decoration:none;color:#111;font-weight:600;
+      background:rgba(255,255,255,.35);
+      padding:8px 12px;border-radius:999px
+    }
+    nav a:hover{background:rgba(255,255,255,.55)}
+
+    section{padding:48px 0}
+    .card{
+      background:#fff;border-radius:16px;box-shadow:0 10px 30px rgba(0,0,0,.08);
+      padding:24px
+    }
+    .grid{display:grid;gap:24px}
+    @media(min-width:900px){.grid{grid-template-columns:1.1fr .9fr}}
+
+    h2{margin-top:0;color:#2b2617}
+    .pill{
+      display:inline-block;background:var(--khaki);
+      color:#111;padding:6px 10px;border-radius:999px;font-weight:700
+    }
+
+    ul{padding-left:18px}
+    li{margin:8px 0}
+
+    form{display:grid;gap:14px}
+    .row{display:grid;gap:12px}
+    @media(min-width:700px){.row{grid-template-columns:1fr 1fr}}
+    label{font-weight:700;font-size:14px}
+    input, select, textarea{
+      width:100%;padding:12px 12px;border-radius:10px;border:1px solid #d9d5c9;
+      background:#faf9f5;font-size:15px
+    }
+    textarea{min-height:120px;resize:vertical}
+    .hint{font-size:12px;opacity:.75}
+
+    .actions{display:flex;gap:12px;flex-wrap:wrap}
+    button{
+      cursor:pointer;border:none;border-radius:12px;padding:12px 18px;
+      background:linear-gradient(135deg, var(--khaki), var(--khaki-dark));
+      color:#111;font-weight:900;letter-spacing:.5px
+    }
+    button.secondary{
+      background:#111;color:var(--khaki)
+    }
+    button:hover{filter:brightness(1.05)}
+
+    footer{
+      background:#111;color:#d6cfb8;padding:24px 16px
+    }
+    footer .wrap{display:flex;gap:12px;flex-wrap:wrap;justify-content:space-between}
+    .small{font-size:12px;opacity:.8}
+
+    .badge{
+      background:#111;color:var(--khaki);padding:6px 10px;border-radius:8px;font-weight:800
+    }
+
+    .success{display:none;margin-top:12px;padding:12px;border-radius:10px;background:#e7f2df;border:1px solid #b7d4a3}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <div class="brand">
+        <div class="logo">VLA</div>
+        <div>
+          <h1>Varrios Los Aztecaz</h1>
+          <div class="tag">Honor • Respect • Loyalty • RP Only</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#rules">Rules</a>
+        <a href="#apply">Apply</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="about">
+      <div class="wrap">
+        <div class="grid">
+          <div class="card">
+            <span class="pill">Who We Are</span>
+            <h2>Brotherhood built on roleplay</h2>
+            <p>
+              Varrios Los Aztecaz is a serious roleplay gang focused on character depth,
+              discipline, and long-term storylines. We value clean RP, respect for the server,
+              and loyalty within the set.
+            </p>
+            <ul>
+              <li>Structured hierarchy and ranks</li>
+              <li>Story-driven conflicts and alliances</li>
+              <li>Active leadership and events</li>
+            </ul>
+          </div>
+          <div class="card">
+            <span class="pill">What We Look For</span>
+            <h2>Quality over numbers</h2>
+            <ul>
+              <li>Solid RP knowledge and maturity</li>
+              <li>Ability to stay in character</li>
+              <li>Respect for fellow players and staff</li>
+              <li>Availability for events</li>
+            </ul>
+            <span class="badge">Khaki Pride</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="rules">
+      <div class="wrap">
+        <div class="card">
+          <h2>Basic Rules</h2>
+          <ul>
+            <li>No OOC drama inside RP scenes</li>
+            <li>Fear RP and value life</li>
+            <li>No metagaming or powergaming</li>
+            <li>Follow server and gang leadership rules</li>
+            <li>Respect rivals — conflict stays IC</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="apply">
+      <div class="wrap">
+        <div class="grid">
+          <div class="card">
+            <h2>Gang Application</h2>
+            <p class="hint">Fill out honestly. Applications are reviewed by leadership.</p>
+            <form id="appForm">
+              <div class="row">
+                <div>
+                  <label>In-Game Name</label>
+                  <input required placeholder="Juan_Cruz" />
+                </div>
+                <div>
+                  <label>Discord Username</label>
+                  <input required placeholder="username#0000" />
+                </div>
+              </div>
+              <div class="row">
+                <div>
+                  <label>Age</label>
+                  <input type="number" min="13" required />
+                </div>
+                <div>
+                  <label>Timezone</label>
+                  <select required>
+                    <option value="">Select</option>
+                    <option>PST</option><option>MST</option><option>CST</option><option>EST</option>
+                    <option>GMT</option><option>UTC+8</option>
+                  </select>
+                </div>
+              </div>
+              <div>
+                <label>RP Experience</label>
+                <textarea required placeholder="Tell us about your RP background..."></textarea>
+              </div>
+              <div>
+                <label>Why Varrios Los Aztecaz?</label>
+                <textarea required></textarea>
+              </div>
+              <div>
+                <label>Character Backstory (short)</label>
+                <textarea required></textarea>
+              </div>
+              <div class="actions">
+                <button type="submit">Submit Application</button>
+                <button type="reset" class="secondary">Reset</button>
+              </div>
+              <div class="success" id="success">Application submitted (demo). Connect this form to Discord or a backend to receive entries.</div>
+            </form>
+          </div>
+          <div class="card">
+            <h2>Application Tips</h2>
+            <ul>
+              <li>Stay realistic and detailed</li>
+              <li>No rushing — quality answers matter</li>
+              <li>Be ready for an IC interview</li>
+            </ul>
+            <p class="hint">This demo site can be hosted on GitHub Pages or Netlify.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrap">
+        <div class="card">
+          <h2>Contact</h2>
+          <p>Questions? Reach out via Discord.</p>
+          <p class="badge">discord.gg/yourserver</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div>© Varrios Los Aztecaz</div>
+      <div class="small">Roleplay only • Not affiliated with real-world groups</div>
+    </div>
+  </footer>
+
+  <script>
+    const form = document.getElementById('appForm');
+    const success = document.getElementById('success');
+    form.addEventListener('submit', (e)=>{
+      e.preventDefault();
+      success.style.display='block';
+      form.reset();
+      window.scrollTo({top: form.offsetTop-120, behavior:'smooth'});
+    });
+  </script>
+</body>
+</html>
